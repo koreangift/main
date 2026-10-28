@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f7eddf"><meta name="description" content="따뜻한 하트 라테와 다섯 가지 감성을 담은 가을 앨범">
-<title>Heart Latte | 가을을 담은 카페 앨범</title>
+<meta name="theme-color" content="#f7eddf"><meta name="description" content="전통 문양을 현대적으로 재구성한 Korean Gift의 우산, 행주, 찻잔 받침, 놋그릇, 머그 디자인 컬렉션">
+<title>Korean Gift | 전통을 오늘의 선물로</title>
 <style>
 :root{--paper:#f7eddf;--cream:#fff8ed;--ink:#3d2924;--muted:#72594b;--line:#dcc2a8;--brown:#783f36;--accent:#b4522f}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -45,58 +45,31 @@ footer{color:var(--muted)}.modal::backdrop{background:#281811ed}
 .brand{display:inline-flex;align-items:baseline;gap:.23em;flex-shrink:0;font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:clamp(24px,2.5vw,32px);font-weight:650;line-height:1.15;letter-spacing:-.045em;white-space:nowrap}
 .brand-korean{color:#16724b}.brand-gift{color:#205db3}
 @media(max-width:720px){.brand{font-size:26px;letter-spacing:-.045em}.topbar{flex-wrap:wrap;row-gap:16px}}
+/* Korean cultural goods collection */
+.hero h1{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-size:clamp(38px,4.2vw,60px);font-weight:500;line-height:1.4;letter-spacing:-.065em}
+.hero h1 em{font-style:normal;color:#16724b}.hero-image{border-radius:140px 140px 8px 8px;object-fit:cover}
+.concept-label{font-size:11px;letter-spacing:.08em;color:var(--muted);margin-top:20px}
+.section-title,.artwork h3,.about h2{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;letter-spacing:-.05em}
+.section-title{font-size:clamp(26px,3.4vw,40px)}.artwork h3{font-size:24px;font-weight:500}
+.image-button img{aspect-ratio:1;object-fit:contain}.artwork p{margin-top:10px;line-height:1.8;word-break:keep-all}
+.artwork .product-detail{margin-top:18px;font-size:11px;letter-spacing:.03em;color:#755e4b;border-top:1px solid var(--line);padding-top:12px}
+.collection-disclosure{font-size:12px;line-height:1.9;color:var(--muted);margin:36px 0 0;max-width:750px}
+@media(max-width:720px){.hero h1{font-size:clamp(36px,8vw,52px)}.hero-image{border-radius:100px 100px 6px 6px}.artwork h3{font-size:23px}}
 </style>
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#top" aria-label="Korean Gift 홈으로"><span class="brand-korean">Korean</span> <span class="brand-gift">Gift</span></a><nav class="nav" aria-label="주 메뉴"><a href="#gallery">컬렉션</a><a href="#about">앨범 소개</a></nav></header>
-<main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-info"><div class="eyebrow">AUTUMN DAYS / WARM LITTLE MOMENTS</div><h1 id="hero-title">A little<br><em>sip of autumn.</em></h1><p class="hero-copy">바람이 서늘해지면, 마음은 조금 더 따뜻하게. 낙엽빛 오후와 갓 내린 라테 한 잔, 다섯 가지 감성으로 가을을 천천히 음미해 보세요.</p><a class="hero-btn" href="#gallery">가을 한 잔 감상하기 <span aria-hidden="true">↗</span></a></div><div class="hero-image-wrap"><img class="hero-image" src="images/latte-watercolor.png" alt="따뜻한 수채화 스타일의 하트 라테"><div class="hero-caption">Golden light. A warm cup. A slower day.</div></div></section>
-<section class="collection" id="gallery"><div class="section-top"><div><div class="eyebrow">THE AUTUMN COLLECTION / 2026</div><h2 class="section-title">Five moments of autumn</h2></div><div class="section-note">가을의 온도를 담은 다섯 장의 이야기.<br>이미지를 누르면 크게 열립니다.</div></div><div class="gallery"><article class="artwork" data-style="수채화 풍">
-      <button class="image-button" type="button" data-image="images/latte-watercolor.png" data-title="가을빛 수채화" aria-label="가을빛 수채화 크게 보기">
-        <img src="images/latte-watercolor.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 수채화 풍 일러스트" loading="lazy" />
-        <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
-      </button>
-      <div class="artwork-meta"><span class="artwork-number">NO. 01</span><span class="artwork-tag">수채화 풍</span></div>
-      <h3>가을빛 수채화</h3>
-      <p>노을처럼 번지는 색감, 따뜻하게 물든 오후</p>
-    </article>
-<article class="artwork" data-style="빈티지 애니메이션 풍">
-      <button class="image-button" type="button" data-image="images/latte-vintage.png" data-title="오래된 가을 카페" aria-label="오래된 가을 카페 크게 보기">
-        <img src="images/latte-vintage.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 빈티지 애니메이션 풍 일러스트" loading="lazy" />
-        <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
-      </button>
-      <div class="artwork-meta"><span class="artwork-number">NO. 02</span><span class="artwork-tag">빈티지 애니메이션 풍</span></div>
-      <h3>오래된 가을 카페</h3>
-      <p>오래된 나무 테이블 위, 커피 향으로 남은 계절</p>
-    </article>
-<article class="artwork" data-style="자연 친화적 풍">
-      <button class="image-button" type="button" data-image="images/latte-nature.png" data-title="가을이 머무는 창가" aria-label="가을이 머무는 창가 크게 보기">
-        <img src="images/latte-nature.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 자연 친화적 풍 일러스트" loading="lazy" />
-        <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
-      </button>
-      <div class="artwork-meta"><span class="artwork-number">NO. 03</span><span class="artwork-tag">자연 친화적 풍</span></div>
-      <h3>가을이 머무는 창가</h3>
-      <p>서늘한 바람 곁에서 두 손으로 감싸 쥔 온기</p>
-    </article>
-<article class="artwork" data-style="햇살 감성 풍">
-      <button class="image-button" type="button" data-image="images/latte-sunshine.png" data-title="가을 햇살 한 스푼" aria-label="가을 햇살 한 스푼 크게 보기">
-        <img src="images/latte-sunshine.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 햇살 감성 풍 일러스트" loading="lazy" />
-        <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
-      </button>
-      <div class="artwork-meta"><span class="artwork-number">NO. 04</span><span class="artwork-tag">햇살 감성 풍</span></div>
-      <h3>가을 햇살 한 스푼</h3>
-      <p>길어진 햇살이 잔 위에 내려앉는 시간</p>
-    </article>
-<article class="artwork" data-style="동화책 풍">
-      <button class="image-button" type="button" data-image="images/latte-storybook.png" data-title="가을날의 작은 이야기" aria-label="가을날의 작은 이야기 크게 보기">
-        <img src="images/latte-storybook.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 동화책 풍 일러스트" loading="lazy" />
-        <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
-      </button>
-      <div class="artwork-meta"><span class="artwork-number">NO. 05</span><span class="artwork-tag">동화책 풍</span></div>
-      <h3>가을날의 작은 이야기</h3>
-      <p>책장을 넘기며 천천히 마시는 달콤한 한 모금</p>
-    </article></div></section>
-<section class="about" id="about"><div class="about-mark" aria-hidden="true">❧</div><div class="eyebrow">A SEASON TO SLOW DOWN</div><h2>가을에는, 조금 더 천천히</h2><p>바스락거리는 낙엽, 포근한 니트, 그리고 손끝에 전해지는 커피의 온기. 하트 라테를 다섯 가지 일러스트로 담아 계절의 작은 쉼표를 모았습니다. 좋아하는 장면 앞에서 잠시 머물러 보세요.</p></section>
-<footer><span>© 2026 HEART LATTE · AUTUMN EDITION</span><span>Gathered with warmth, this autumn.</span></footer></main>
+<header class="topbar"><a class="brand" href="#top" aria-label="Korean Gift 홈으로"><span class="brand-korean">Korean</span> <span class="brand-gift">Gift</span></a><nav class="nav" aria-label="주 메뉴"><a href="#gallery">컬렉션</a><a href="#about">브랜드 이야기</a></nav></header>
+<main id="top">
+<section class="hero" aria-labelledby="hero-title"><div class="hero-info"><div class="eyebrow">KOREAN HERITAGE, EVERYDAY OBJECTS</div><h1 id="hero-title">전통을 오늘의<br><em>선물로.</em></h1><p class="hero-copy">구름의 곡선, 조각보의 색, 산수의 여백.<br>한국의 아름다움을 담아 매일 곁에 두고 싶은 물건을 제안합니다.</p><a class="hero-btn" href="#gallery">컬렉션 살펴보기 <span aria-hidden="true">↗</span></a><p class="concept-label">KOREAN GIFT · 상품 디자인 콘셉트</p></div><div class="hero-image-wrap"><img class="hero-image" src="images/korean-mug.webp" alt="푸른 산과 초록 소나무를 담은 산빛 머그 디자인 콘셉트" fetchpriority="high" width="1024" height="1024"><div class="hero-caption">A little heritage, in your everyday.</div></div></section>
+<section class="collection" id="gallery" aria-labelledby="collection-title"><div class="section-top"><div><div class="eyebrow">THE EVERYDAY HERITAGE COLLECTION</div><h2 class="section-title" id="collection-title">일상에 스며든 한국의 멋</h2></div><div class="section-note">다섯 가지 생활용품, 다섯 가지 전통의 해석.<br>이미지를 누르면 크게 볼 수 있습니다.</div></div>
+<div class="gallery"><article class="artwork"><button class="image-button" type="button" data-image="images/korean-umbrella.webp" data-title="구름결 우산 · 상품 디자인 콘셉트" aria-label="구름결 우산 크게 보기"><img src="images/korean-umbrella.webp" alt="청록과 파랑의 구름·꽃 기하 문양을 새롭게 구성한 우산 콘셉트" loading="lazy" width="1024" height="1024"><span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span></button><div class="artwork-meta"><span class="artwork-number">OBJECT / 01</span><span class="artwork-tag">구름 · 단청</span></div><h3>구름결 우산</h3><p>비 오는 날 펼치는 작은 풍경. 구름의 곡선과 단청의 리듬을 가볍게 담았습니다.</p><p class="product-detail">패브릭 인쇄 · 우드 핸들 제안</p></article>
+<article class="artwork"><button class="image-button" type="button" data-image="images/korean-cloth.webp" data-title="조각빛 행주 · 상품 디자인 콘셉트" aria-label="조각빛 행주 크게 보기"><img src="images/korean-cloth.webp" alt="청록과 남색 조각보 구성의 면 행주 디자인 콘셉트" loading="lazy" width="1024" height="1024"><span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span></button><div class="artwork-meta"><span class="artwork-number">OBJECT / 02</span><span class="artwork-tag">조각보</span></div><h3>조각빛 행주</h3><p>작은 색면이 모여 만드는 단정한 부엌. 조각보의 구성을 일상의 면 직물로 풀었습니다.</p><p class="product-detail">면 직물 · 패턴 프린트 제안</p></article>
+<article class="artwork"><button class="image-button" type="button" data-image="images/korean-coaster.webp" data-title="연화 찻잔 받침 · 상품 디자인 콘셉트" aria-label="연화 찻잔 받침 크게 보기"><img src="images/korean-coaster.webp" alt="푸른 연꽃 기하 문양의 도자 찻잔 받침 디자인 콘셉트" loading="lazy" width="1024" height="1024"><span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span></button><div class="artwork-meta"><span class="artwork-number">OBJECT / 03</span><span class="artwork-tag">연꽃 · 기하</span></div><h3>연화 찻잔 받침</h3><p>차 한 잔 아래 피어나는 여백. 연꽃잎의 반복을 간결한 선과 원으로 재구성했습니다.</p><p class="product-detail">도자 소재 · 전사 장식 제안</p></article>
+<article class="artwork"><button class="image-button" type="button" data-image="images/korean-brass.webp" data-title="물결 놋그릇 · 상품 디자인 콘셉트" aria-label="물결 놋그릇 크게 보기"><img src="images/korean-brass.webp" alt="물결 테두리를 새긴 금빛 놋그릇 한 쌍의 디자인 콘셉트" loading="lazy" width="1024" height="1024"><span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span></button><div class="artwork-meta"><span class="artwork-number">OBJECT / 04</span><span class="artwork-tag">물결 · 금속공예</span></div><h3>물결 놋그릇</h3><p>은은한 금빛에 잔잔한 물결을 더했습니다. 식탁 위에 오래 머무는 형태를 생각합니다.</p><p class="product-detail">놋쇠 소재 · 테두리 음각 제안</p></article>
+<article class="artwork"><button class="image-button" type="button" data-image="images/korean-mug.webp" data-title="산빛 머그 · 상품 디자인 콘셉트" aria-label="산빛 머그 크게 보기"><img src="images/korean-mug.webp" alt="푸른 산 능선과 초록 소나무를 새롭게 구성한 백색 머그 디자인 콘셉트" loading="lazy" width="1024" height="1024"><span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span></button><div class="artwork-meta"><span class="artwork-number">OBJECT / 05</span><span class="artwork-tag">산수 · 소나무</span></div><h3>산빛 머그</h3><p>산의 능선과 소나무의 선을 한 잔에. 특정 회화를 옮기지 않고 새로운 풍경을 그렸습니다.</p><p class="product-detail">백색 도자 · 2색 전사 제안</p></article></div>
+<p class="collection-disclosure">본 컬렉션은 AI로 시각화한 상품 디자인 제안입니다. 실제 판매·제작 제품이 아니며, 소재와 제작 방식은 개발 단계의 제안입니다.</p></section>
+<section class="about" id="about"><div class="about-mark" aria-hidden="true">❧</div><div class="eyebrow">TRADITION, REIMAGINED</div><h2>익숙한 전통, 새로운 쓰임</h2><p>한국의 전통적 소재와 조형 원리에서 출발해, 오늘의 생활에 어울리는 패턴과 형태를 새롭게 구성합니다. 특정 박물관의 상품 도안·작품 이미지·로고를 사용하지 않았으며, 박물관·미술관과 제휴한 상품이 아닙니다.</p></section>
+<footer><span>© 2026 Korean Gift</span><span>한국의 멋을 일상의 선물로.</span></footer></main>
 <dialog class="modal" id="image-modal" aria-label="이미지 크게 보기"><button type="button" class="modal-close" aria-label="닫기">×</button><figure><img id="modal-image" alt=""><figcaption id="modal-caption"></figcaption></figure></dialog>
 <script>
 (function(){
