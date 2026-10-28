@@ -2,10 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f7f3ec"><meta name="description" content="하트 라테를 서로 다른 감성으로 표현한 작은 이미지 앨범">
-<title>Heart Latte | 작은 카페 앨범</title>
+<meta name="theme-color" content="#f7eddf"><meta name="description" content="따뜻한 하트 라테와 다섯 가지 감성을 담은 가을 앨범">
+<title>Heart Latte | 가을을 담은 카페 앨범</title>
 <style>
-:root{--paper:#f7f3ec;--cream:#fdfaf5;--ink:#3c362f;--muted:#857b70;--line:#e6ded2;--brown:#79563c;--accent:#b6815e}
+:root{--paper:#f7eddf;--cream:#fff8ed;--ink:#3d2924;--muted:#72594b;--line:#dcc2a8;--brown:#783f36;--accent:#b4522f}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #ac7152;outline-offset:4px}
 .topbar{display:flex;align-items:center;justify-content:space-between;max-width:1250px;margin:0 auto;padding:30px 36px;gap:20px}
@@ -19,58 +19,80 @@ footer{border-top:1px solid var(--line);padding:30px 0 45px;display:flex;align-i
 .modal{border:0;padding:0;background:transparent;width:min(92vw,1080px);max-height:94vh;color:#fff}.modal::backdrop{background:rgba(29,23,17,.88)}.modal figure{margin:0;display:flex;flex-direction:column;align-items:center}.modal img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:4px}.modal figcaption{margin-top:13px;font-size:13px;letter-spacing:.04em}.modal-close{position:absolute;right:0;top:0;border:0;background:rgba(0,0,0,.55);color:white;cursor:pointer;border-radius:0 0 0 5px;font-size:26px;line-height:1;padding:9px 15px}
 @media(max-width:720px){.topbar{padding:20px}.brand{font-size:18px}.nav{gap:14px;font-size:12px}main{padding:0 20px}.hero{grid-template-columns:1fr;gap:20px;min-height:auto;padding:42px 0 70px}.hero h1{font-size:55px;margin:16px 0}.hero-copy{font-size:14px}.hero-image-wrap{padding:10px 16px 0 16px}.hero-image{border-radius:160px 160px 4px 4px;max-height:600px}.collection{padding:44px 0 80px}.section-top{align-items:start;flex-direction:column;gap:5px}.section-note{text-align:left}.gallery{grid-template-columns:1fr;gap:48px}.artwork h3{font-size:23px}.about{padding:45px 22px;margin-bottom:60px}.about h2{font-size:25px}footer{gap:14px;flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.image-button img{transition:none}}
+
+/* Autumn edition */
+body{background:radial-gradient(ellipse at 100% 8%,#ecd0ad66,transparent 42%),radial-gradient(ellipse at 0 48%,#d4a06b22,transparent 40%),var(--paper)}
+.topbar{border-bottom:1px solid var(--line)}.brand{color:var(--brown)}
+.hero{position:relative}.hero-info{min-width:0}.hero h1{font-size:clamp(44px,5.3vw,76px)}
+.hero h1 em{color:#9b482f}.hero-copy{color:#705246;max-width:390px}
+.hero-btn{border-radius:30px;box-shadow:0 6px 18px #783f361a}.hero-btn:hover{background:#592d29}
+.hero-image-wrap{isolation:isolate}
+.hero-image-wrap::before{content:'';position:absolute;inset:3% -1% 8% 8%;border:1px solid #b88252;border-radius:50% 50% 8px 8px;transform:rotate(5deg);z-index:-1}
+.hero-image-wrap::after{content:'';width:55px;height:95px;left:-7px;top:8%;background:linear-gradient(65deg,transparent 48%,#f6dfbb 49% 51%,transparent 52%),#a94e2d;border-radius:95% 0 95% 0;transform:rotate(-25deg);box-shadow:5px 8px 15px #783f3615}
+.hero-image{box-shadow:0 20px 45px #663b2826}.hero-caption{font-size:13px}
+.artwork{padding:12px 12px 22px;background:#fff8ed;border:1px solid #e1cbb5;border-radius:7px;box-shadow:0 5px 20px #663b2808}
+.artwork-meta,.artwork h3,.artwork p{margin-left:8px;margin-right:8px}
+.artwork-tag{color:#795039;border-color:#d9b991;background:#f6ead8}
+.artwork h3{color:var(--brown)}.artwork p{color:var(--muted)}
+.image-button{background:#ead8be}.zoom-hint{background:#542d27e6}
+.about{position:relative;overflow:hidden;background:linear-gradient(125deg,#693c32,#472d29);color:#fff4e3;border:1px solid #8d5940;border-radius:110px 8px 110px 8px}
+.about .eyebrow,.about .about-mark{color:#e9bd87}.about .about-mark{font-size:46px;line-height:1}
+.about p{color:#f0dcc5}.about h2{color:#fff4e3}
+footer{color:var(--muted)}.modal::backdrop{background:#281811ed}
+@media(max-width:720px){.hero h1{font-size:clamp(42px,9vw,62px)}.hero-image-wrap::after{width:37px;height:66px;left:0}.about{border-radius:60px 6px 60px 6px}.brand{font-size:16px;letter-spacing:.09em}.topbar{gap:12px}.nav{gap:12px}.hero-image-wrap::before{right:3%}.gallery{gap:30px}}
+
 </style>
 </head>
 <body>
 <header class="topbar"><a class="brand" href="#top" aria-label="홈으로">HEART LATTE<span class="brand-dot">.</span></a><nav class="nav" aria-label="주 메뉴"><a href="#gallery">컬렉션</a><a href="#about">앨범 소개</a></nav></header>
-<main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-info"><div class="eyebrow">A SMALL CUP, A SOFT MOMENT</div><h1 id="hero-title">A little<br><em>cup of joy.</em></h1><p class="hero-copy">같은 하트 라테, 다섯 가지 다른 분위기. 따뜻한 커피 한 잔에 담긴 작은 순간들을 천천히 감상해 보세요.</p><a class="hero-btn" href="#gallery">앨범 감상하기 <span aria-hidden="true">↗</span></a></div><div class="hero-image-wrap"><img class="hero-image" src="images/latte-watercolor.png" alt="따뜻한 수채화 스타일의 하트 라테"><div class="hero-caption">Little moments, beautifully kept.</div></div></section>
-<section class="collection" id="gallery"><div class="section-top"><div><div class="eyebrow">THE COLLECTION / 2026</div><h2 class="section-title">Five moods of latte</h2></div><div class="section-note">각 작품은 하나씩 따로 감상할 수 있어요.<br>이미지를 누르면 크게 열립니다.</div></div><div class="gallery"><article class="artwork" data-style="수채화 풍">
-      <button class="image-button" type="button" data-image="images/latte-watercolor.png" data-title="수채화의 오후" aria-label="수채화의 오후 크게 보기">
+<main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-info"><div class="eyebrow">AUTUMN DAYS / WARM LITTLE MOMENTS</div><h1 id="hero-title">A little<br><em>sip of autumn.</em></h1><p class="hero-copy">바람이 서늘해지면, 마음은 조금 더 따뜻하게. 낙엽빛 오후와 갓 내린 라테 한 잔, 다섯 가지 감성으로 가을을 천천히 음미해 보세요.</p><a class="hero-btn" href="#gallery">가을 한 잔 감상하기 <span aria-hidden="true">↗</span></a></div><div class="hero-image-wrap"><img class="hero-image" src="images/latte-watercolor.png" alt="따뜻한 수채화 스타일의 하트 라테"><div class="hero-caption">Golden light. A warm cup. A slower day.</div></div></section>
+<section class="collection" id="gallery"><div class="section-top"><div><div class="eyebrow">THE AUTUMN COLLECTION / 2026</div><h2 class="section-title">Five moments of autumn</h2></div><div class="section-note">가을의 온도를 담은 다섯 장의 이야기.<br>이미지를 누르면 크게 열립니다.</div></div><div class="gallery"><article class="artwork" data-style="수채화 풍">
+      <button class="image-button" type="button" data-image="images/latte-watercolor.png" data-title="가을빛 수채화" aria-label="가을빛 수채화 크게 보기">
         <img src="images/latte-watercolor.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 수채화 풍 일러스트" loading="lazy" />
         <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
       </button>
       <div class="artwork-meta"><span class="artwork-number">NO. 01</span><span class="artwork-tag">수채화 풍</span></div>
-      <h3>수채화의 오후</h3>
-      <p>번지는 색감 속에 담긴 작은 여유</p>
+      <h3>가을빛 수채화</h3>
+      <p>노을처럼 번지는 색감, 따뜻하게 물든 오후</p>
     </article>
 <article class="artwork" data-style="빈티지 애니메이션 풍">
-      <button class="image-button" type="button" data-image="images/latte-vintage.png" data-title="오래된 카페의 기억" aria-label="오래된 카페의 기억 크게 보기">
+      <button class="image-button" type="button" data-image="images/latte-vintage.png" data-title="오래된 가을 카페" aria-label="오래된 가을 카페 크게 보기">
         <img src="images/latte-vintage.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 빈티지 애니메이션 풍 일러스트" loading="lazy" />
         <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
       </button>
       <div class="artwork-meta"><span class="artwork-number">NO. 02</span><span class="artwork-tag">빈티지 애니메이션 풍</span></div>
-      <h3>오래된 카페의 기억</h3>
-      <p>아날로그 감성으로 남긴 커피 한 잔</p>
+      <h3>오래된 가을 카페</h3>
+      <p>오래된 나무 테이블 위, 커피 향으로 남은 계절</p>
     </article>
 <article class="artwork" data-style="자연 친화적 풍">
-      <button class="image-button" type="button" data-image="images/latte-nature.png" data-title="초록빛 창가" aria-label="초록빛 창가 크게 보기">
+      <button class="image-button" type="button" data-image="images/latte-nature.png" data-title="가을이 머무는 창가" aria-label="가을이 머무는 창가 크게 보기">
         <img src="images/latte-nature.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 자연 친화적 풍 일러스트" loading="lazy" />
         <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
       </button>
       <div class="artwork-meta"><span class="artwork-number">NO. 03</span><span class="artwork-tag">자연 친화적 풍</span></div>
-      <h3>초록빛 창가</h3>
-      <p>식물과 바람이 머무는 포근한 자리</p>
+      <h3>가을이 머무는 창가</h3>
+      <p>서늘한 바람 곁에서 두 손으로 감싸 쥔 온기</p>
     </article>
 <article class="artwork" data-style="햇살 감성 풍">
-      <button class="image-button" type="button" data-image="images/latte-sunshine.png" data-title="햇살 한 스푼" aria-label="햇살 한 스푼 크게 보기">
+      <button class="image-button" type="button" data-image="images/latte-sunshine.png" data-title="가을 햇살 한 스푼" aria-label="가을 햇살 한 스푼 크게 보기">
         <img src="images/latte-sunshine.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 햇살 감성 풍 일러스트" loading="lazy" />
         <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
       </button>
       <div class="artwork-meta"><span class="artwork-number">NO. 04</span><span class="artwork-tag">햇살 감성 풍</span></div>
-      <h3>햇살 한 스푼</h3>
-      <p>나른한 오후를 따뜻하게 물들이는 빛</p>
+      <h3>가을 햇살 한 스푼</h3>
+      <p>길어진 햇살이 잔 위에 내려앉는 시간</p>
     </article>
 <article class="artwork" data-style="동화책 풍">
-      <button class="image-button" type="button" data-image="images/latte-storybook.png" data-title="달콤한 작은 이야기" aria-label="달콤한 작은 이야기 크게 보기">
+      <button class="image-button" type="button" data-image="images/latte-storybook.png" data-title="가을날의 작은 이야기" aria-label="가을날의 작은 이야기 크게 보기">
         <img src="images/latte-storybook.png" alt="하트 모양 라테 아트가 있는 흰색 커피잔, 동화책 풍 일러스트" loading="lazy" />
         <span class="zoom-hint" aria-hidden="true">↗ 크게 보기</span>
       </button>
       <div class="artwork-meta"><span class="artwork-number">NO. 05</span><span class="artwork-tag">동화책 풍</span></div>
-      <h3>달콤한 작은 이야기</h3>
-      <p>동화책을 펼친 듯 아기자기한 순간</p>
+      <h3>가을날의 작은 이야기</h3>
+      <p>책장을 넘기며 천천히 마시는 달콤한 한 모금</p>
     </article></div></section>
-<section class="about" id="about"><div class="about-mark">✻</div><div class="eyebrow">ABOUT THIS ALBUM</div><h2>매일의 작은 쉼표</h2><p>흰색 잔에 담긴 하트 모양 카페라테를 다양한 일러스트 분위기로 담은 작은 디지털 앨범입니다. 오래된 카페의 기억부터 싱그러운 창가의 햇살까지, 좋아하는 장면을 골라보세요.</p></section>
-<footer><span>© 2026 HEART LATTE ALBUM</span><span>Made for slow and lovely moments ♡</span></footer></main>
+<section class="about" id="about"><div class="about-mark" aria-hidden="true">❧</div><div class="eyebrow">A SEASON TO SLOW DOWN</div><h2>가을에는, 조금 더 천천히</h2><p>바스락거리는 낙엽, 포근한 니트, 그리고 손끝에 전해지는 커피의 온기. 하트 라테를 다섯 가지 일러스트로 담아 계절의 작은 쉼표를 모았습니다. 좋아하는 장면 앞에서 잠시 머물러 보세요.</p></section>
+<footer><span>© 2026 HEART LATTE · AUTUMN EDITION</span><span>Gathered with warmth, this autumn.</span></footer></main>
 <dialog class="modal" id="image-modal" aria-label="이미지 크게 보기"><button type="button" class="modal-close" aria-label="닫기">×</button><figure><img id="modal-image" alt=""><figcaption id="modal-caption"></figcaption></figure></dialog>
 <script>
 (function(){
