@@ -41,10 +41,14 @@ body{background:radial-gradient(ellipse at 100% 8%,#ecd0ad66,transparent 42%),ra
 footer{color:var(--muted)}.modal::backdrop{background:#281811ed}
 @media(max-width:720px){.hero h1{font-size:clamp(42px,9vw,62px)}.hero-image-wrap::after{width:37px;height:66px;left:0}.about{border-radius:60px 6px 60px 6px}.brand{font-size:16px;letter-spacing:.09em}.topbar{gap:12px}.nav{gap:12px}.hero-image-wrap::before{right:3%}.gallery{gap:30px}}
 
+/* Korean Gift wordmark */
+.brand{display:inline-flex;align-items:baseline;gap:.23em;flex-shrink:0;font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:clamp(24px,2.5vw,32px);font-weight:650;line-height:1.15;letter-spacing:-.045em;white-space:nowrap}
+.brand-korean{color:#16724b}.brand-gift{color:#205db3}
+@media(max-width:720px){.brand{font-size:26px;letter-spacing:-.045em}.topbar{flex-wrap:wrap;row-gap:16px}}
 </style>
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#top" aria-label="홈으로">HEART LATTE<span class="brand-dot">.</span></a><nav class="nav" aria-label="주 메뉴"><a href="#gallery">컬렉션</a><a href="#about">앨범 소개</a></nav></header>
+<header class="topbar"><a class="brand" href="#top" aria-label="Korean Gift 홈으로"><span class="brand-korean">Korean</span> <span class="brand-gift">Gift</span></a><nav class="nav" aria-label="주 메뉴"><a href="#gallery">컬렉션</a><a href="#about">앨범 소개</a></nav></header>
 <main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-info"><div class="eyebrow">AUTUMN DAYS / WARM LITTLE MOMENTS</div><h1 id="hero-title">A little<br><em>sip of autumn.</em></h1><p class="hero-copy">바람이 서늘해지면, 마음은 조금 더 따뜻하게. 낙엽빛 오후와 갓 내린 라테 한 잔, 다섯 가지 감성으로 가을을 천천히 음미해 보세요.</p><a class="hero-btn" href="#gallery">가을 한 잔 감상하기 <span aria-hidden="true">↗</span></a></div><div class="hero-image-wrap"><img class="hero-image" src="images/latte-watercolor.png" alt="따뜻한 수채화 스타일의 하트 라테"><div class="hero-caption">Golden light. A warm cup. A slower day.</div></div></section>
 <section class="collection" id="gallery"><div class="section-top"><div><div class="eyebrow">THE AUTUMN COLLECTION / 2026</div><h2 class="section-title">Five moments of autumn</h2></div><div class="section-note">가을의 온도를 담은 다섯 장의 이야기.<br>이미지를 누르면 크게 열립니다.</div></div><div class="gallery"><article class="artwork" data-style="수채화 풍">
       <button class="image-button" type="button" data-image="images/latte-watercolor.png" data-title="가을빛 수채화" aria-label="가을빛 수채화 크게 보기">
